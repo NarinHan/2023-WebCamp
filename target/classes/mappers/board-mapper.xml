@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Board">
+    <insert id="insertBoard">
+        insert into pboard(category, title, nickname, content, cnt, status) values (#{category}, #{title}, #{nickname}, #{content}, 0, 1)
+    </insert>
+    <update id="updateBoard">
+        update pboard set title=#{title}, content=#{content}, nickname=#{nickname}, category=#{category} where id=#{id}
+    </update>
+    <delete id="deleteBoard">
+        delete from pboard where id=#{id}
+    </delete>
+    <select id="getBoard" resultType="Board">
+        select * from pboard where id=#{id}
+    </select>
+    <select id="getBoardList" resultType="Board">
+        select * from pboard order by id desc
+    </select>
+</mapper>

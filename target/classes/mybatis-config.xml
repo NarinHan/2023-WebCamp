@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- *-mapper.xml 파일에서 쿼리문 작성 시 parameterType 과 resultType 의 자료형을 적어주는데 -->
+    <!-- DTO 객체의 주소를 적는 부분에 클래스 주소명(e.g. com.example.DTO.BoardDTO)을 모두 적기 불편하니 별칭을 설정해줌-->
+    <typeAliases>
+        <typeAlias type="com.example.DTO.BoardDTO" alias="Board" />
+        <typeAlias type="com.example.DTO.UserDTO" alias="User" />
+    </typeAliases>
+</configuration>

@@ -1,0 +1,29 @@
+.btn-kakao {
+    color: #3C1E1E;
+    background-color: #FFEC42;
+    border-color: #FFDE00;
+}
+.btn-kakao:hover {
+    background-color: #FFDE00;
+}
+.fa-kakao:before {
+    content: "\e900";
+}
+.btn-naver {
+    max-width: 430px;
+    max-height: 100px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+#kakao-login-image {
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+
+#loginFail {
+    color: red;
+}
+
+
